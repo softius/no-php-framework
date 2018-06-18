@@ -22,7 +22,7 @@ You can either start from the first chapter and proceed to the last one (chapter
 
 ## Disclaimer
 
-The working examples found in this repository are a guide and they are not suitable for use in production. 
+The working examples found in this repository are a guide and they are not suitable for use in production.
 
 ## License
 
