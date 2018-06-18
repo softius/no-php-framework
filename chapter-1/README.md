@@ -61,3 +61,10 @@ Once the `composer.json` has been created, we need to declare our directory stru
         }
     }
 ```
+
+**Our first dependency**
+Installing a new dependency is fairly easy and straightforward. Below we declare PHPUnit as a dependency in the development environment (mind the `--dev` flag). Dependencies can be found in Packagist.org and then can be installed, as follows:
+
+```
+$ composer require phpunit/phpunit --dev
+```

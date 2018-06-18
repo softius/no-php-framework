@@ -17,5 +17,8 @@
         "psr-4": {
             "MyApp\\Tests\\": "tests/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
     }
 }
