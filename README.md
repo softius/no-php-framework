@@ -28,4 +28,4 @@ The working examples found in this repository are a guide and they are not suita
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
-[chapter-1]: https://github.com/softius/no-php-framework/blob/01-chapter/README.md
+[chapter-1]: ./chapter-1/
