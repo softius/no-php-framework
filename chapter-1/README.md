@@ -24,3 +24,40 @@ Here is the structure that we will use in the following examples
 * `public/` Public assets
 * `tests/` Tests
 * `var/` Other
+
+*Project setup*
+The Composer is a great dependency manager for PHP. You can define the libraries you depends on and check which versions can be installed. It is also possible to share the dependencies with your colleagues. All the dependencies along with the project information are being stored in `composer.json` file.
+
+Using Composer in legacy applications is a crutial upgrade. It changes the way third-party libraries are being installed and lays a strong foundation for upcoming changes. It may seems cumbersome to enable Composer in a legacy application but it is totally worth it.
+
+This section assumes that you have already installed the Composer. If you don't, you can follow the instructions at https://getcomposer.org/doc/00-intro.md . At the time of writing, the latest version is 1.6.5.
+
+As a first step, we need to create the `composer.json` file for our new project. While it is possible to create the file manually, there is no reason to. Executing the following command, it will ask you for the most important project details (title, description, authros etc) and then build the `composer.json` file.
+
+```
+$ composer init
+```
+
+Here is a sample of the questions currently prompted by Composer:
+
+```
+This command will guide you through creating your composer.json config.
+
+Package name (<vendor>/<name>): softius/no-framework-chapter-1
+Description []: Build your own PHP Application - Chapter 1
+```
+
+Once the `composer.json` has been created, we need to declare our directory structure, so that Composer can autoload our classes. The following must be appended in `composer.json` file. Mind the `MyApp` which indicates the application namespace.
+
+``` json
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyApp\\Tests\\": "tests/"
+        }
+    }
+```
