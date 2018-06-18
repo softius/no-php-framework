@@ -1,0 +1,24 @@
+{
+    "name": "softius/no-framework-chapter-1",
+    "description": "Build your own PHP Application using libraries only",
+    "authors": [
+        {
+            "name": "Iacovos Constantinou",
+            "email": "softius@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyApp\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
