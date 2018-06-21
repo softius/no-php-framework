@@ -64,9 +64,33 @@ Once the `composer.json` has been created, we need to declare our directory stru
     }
 ```
 
-**Our first dependency**
+## Our first dependency
 Installing a new dependency is fairly easy and straightforward. Below we declare PHPUnit as a dependency in the development environment (mind the `--dev` flag). Dependencies can be found in Packagist.org and then can be installed, as follows:
 
 ```
 $ composer require phpunit/phpunit --dev
 ```
+
+The above command installs PHPUnit which can be used in the development environment to write our unit tests.
+
+## Front controller
+So far we have created the project structure, initialized our project and installed our first dependency. Before proceeding to the next chapter, we will setup a simple front controller and execute our application.
+
+To do so, we will need to create the `index.php` file under the public folder. The front controller will just display "Hello world!". 
+
+``` php
+<?php // index.php
+echo "Hello world!";
+
+```
+
+We can use the [PHP Built-in web server][web-server] to execute our application. The following command starts the built-in web server at port 8000. So, you can visit http://localhost:8000 to access the application.
+
+``` php
+$ php -S localhost:8000 -t public/
+```
+
+[web-server]: https://secure.php.net/manual/en/features.commandline.webserver.php
+
+
+
