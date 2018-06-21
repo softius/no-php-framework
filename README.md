@@ -17,6 +17,14 @@ The guide is structured as a series of mini chapters, which can be found in the 
 
 You can either start from the first chapter and proceed to the last one (chapter by chapter) or jump straight to any chapter.
 
+As part of this guide we will build an application similar to trakt.tv. Here are the features that we will cover
+
+* Search TV Shows
+* Integration with tvdb API
+* Personalised TV Recommendations
+* Personal lists (watched, like to watch)
+* API
+
 ## Table of contents
 1. [Introduction][chapter-1]
 
